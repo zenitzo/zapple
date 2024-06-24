@@ -15,7 +15,7 @@ body {
   height: 100%;
   background: #000;
   border-color: #3b3b3b;
-  touch-action: pan-y;
+  user-select: none;
 }
 
 canvas {
