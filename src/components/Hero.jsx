@@ -16,13 +16,13 @@ const Hero = () => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener('resize', handleVideoSrcSet);
+  // useEffect(() => {
+  //   window.addEventListener('resize', handleVideoSrcSet);
 
-    return () => {
-      window.removeEventListener('resize', handleVideoSrcSet);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('resize', handleVideoSrcSet);
+  //   };
+  // }, []);
 
   useGSAP(() => {
     gsap.to('#hero', { opacity: 1, delay: 2, scrub: true });
