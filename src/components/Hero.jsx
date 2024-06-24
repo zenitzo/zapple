@@ -16,13 +16,13 @@ const Hero = () => {
     }
   };
 
-  // useEffect(() => {
-  //   window.addEventListener('resize', handleVideoSrcSet);
+  useEffect(() => {
+    window.addEventListener('resize', handleVideoSrcSet);
 
-  //   return () => {
-  //     window.removeEventListener('resize', handleVideoSrcSet);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('resize', handleVideoSrcSet);
+    };
+  }, []);
 
   useGSAP(() => {
     gsap.to('#hero', { opacity: 1, delay: 2, scrub: true });
@@ -35,7 +35,7 @@ const Hero = () => {
         <p id="hero" className="hero-title">
           iPhone 15 Pro
         </p>
-        <div className="md:w-10/12 w-9/12">
+        <div className="md:w-10/12 w-9/12 overflow-scroll">
           <video
             className="pointer-events-none"
             autoPlay
