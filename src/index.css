@@ -12,7 +12,7 @@ body {
   color: white;
   width: 100vw;
   overflow-x: hidden;
-  overflow: scroll;
+  scroll-behavior: smooth;
   height: 100%;
   background: #000;
   border-color: #3b3b3b;
