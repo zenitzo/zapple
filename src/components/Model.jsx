@@ -53,14 +53,14 @@ const Model = () => {
   }, []);
 
   return (
-    <section className="common-padding scroll-smooth">
+    <section className="common-padding overflow-auto scroll-smooth">
       <div className="screen-max-width">
         <h1 id="heading" className="section-heading">
           Take a closer look.
         </h1>
 
         <div className="flex flex-col items-center mt-5 scroll-smooth">
-          <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
+          <div className="w-full h-[75vh] md:h-[90vh] relative">
             <ModelView
               index={1}
               groupRef={small}
