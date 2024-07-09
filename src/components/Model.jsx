@@ -59,7 +59,7 @@ const Model = () => {
           Take a closer look.
         </h1>
 
-        <div className="flex flex-col items-center mt-5 absolute scroll-smooth">
+        <div className="flex flex-col items-center mt-5 overflow-auto scroll-smooth">
           <div className="w-full h-[75vh] md:h-[90vh] relative">
             <ModelView
               index={1}
