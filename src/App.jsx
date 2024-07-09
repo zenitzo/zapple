@@ -10,7 +10,7 @@ import * as Sentry from '@sentry/react';
 
 const App = () => {
   return (
-    <main className="bg-black">
+    <main className="bg-black overflow-y-auto">
       <Navbar />
       <Hero />
       <Highlights />
@@ -19,7 +19,7 @@ const App = () => {
       <HowItWorks />
       <Footer />
     </main>
-  )
-}
+  );
+};
 
 export default Sentry.withProfiler(App);
